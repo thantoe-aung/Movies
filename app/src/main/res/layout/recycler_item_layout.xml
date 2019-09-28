@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@drawable/main_bg"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="50dp">
+        <ImageView
+            android:id="@+id/ivPoster"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/black"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/iconColor"
+        android:text="Black Panther"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvMovieGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/iconColor"
+        android:layout_gravity="center"
+        android:text="Blah Blah Blah Blah Blah"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:id="@+id/tvImdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/iconColor"
+            android:text="7.5"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/tvRottenTomato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/iconColor"
+            android:layout_marginLeft="60dp"
+            android:text="97s"/>
+        <TextView
+            android:id="@+id/tvMetraCentric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/iconColor"
+            android:layout_marginLeft="80dp"
+            android:text="92s"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/secondaryText"
+            android:text="IMDB"
+            android:layout_marginLeft="0dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/secondaryText"
+            android:layout_marginLeft="20dp"
+            android:text="Rotten Tomato"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/secondaryText"
+            android:layout_marginLeft="20dp"
+            android:text="Meta Centric"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBuyTickets"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="@string/btn_buy_tickets"
+        app:cornerRadius="20dp"
+        android:textSize="18sp"
+        android:outlineSpotShadowColor="@color/iconColor"
+        android:outlineAmbientShadowColor="@color/iconColor"
+        android:textColor="@color/iconColor"
+        android:layout_marginTop="10dp"
+        app:strokeColor="@color/iconColor"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_keyboard_arrow_down"/>
+
+</LinearLayout>

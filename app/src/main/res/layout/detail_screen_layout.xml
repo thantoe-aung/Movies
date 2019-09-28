@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="@color/iconColor"
+            android:text="Black Panther"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvMovieDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/iconColor"
+            android:layout_gravity="center"
+            android:text="Blah Blah Blah Blah Blah"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:id="@+id/tvDetailImdb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/iconColor"
+                android:text="7.5"
+                android:layout_marginLeft="-10dp"/>
+            <TextView
+                android:id="@+id/tvDetailRotten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/iconColor"
+                android:layout_marginLeft="60dp"
+                android:text="97s"/>
+            <TextView
+                android:id="@+id/tvDetailCentric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/iconColor"
+                android:layout_marginLeft="80dp"
+                android:text="92s"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/secondaryText"
+                android:text="IMDB"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/secondaryText"
+                android:layout_marginLeft="20dp"
+                android:text="Rotten Tomato"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/secondaryText"
+                android:layout_marginLeft="20dp"
+                android:text="MetaCritric"/>
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:elevation="15dp"
+            app:cardCornerRadius="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/screen"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/iconColor"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/review"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read More"
+                android:textColor="@color/iconColor"
+                android:textSize="18dp"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_keyboard_arrow_down"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            app:strokeColor="@color/iconColor"
+            app:strokeWidth="2dp"
+            android:text="@string/btn_buy_tickets"
+            android:textColor="@color/iconColor"
+            android:layout_gravity="center"
+            app:cornerRadius="20dp"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cast"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/iconColor"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCasts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Screenshots"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/iconColor"
+            android:textSize="18dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvScreenshots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

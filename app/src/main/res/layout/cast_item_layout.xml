@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="15dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivCast"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cast"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Gina Rodriguez"
+            android:layout_alignBottom="@id/ivCast"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textColor="@color/iconColor"/>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
